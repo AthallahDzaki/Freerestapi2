@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')
 }
 
-var creator = "@zeeoneofc"
+var creator = "@FreeRestAPI"
 var ytdl = require('ytdl-core');
 var ytpl = require('ytpl');
 var secure = require('ssl-express-www');
@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const listkey = ["undefined", "zeeoneofc"];
+const listkey = ["undefined", "FreeRestAPIofc"];
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
@@ -158,28 +158,17 @@ for (var i = lenn; i > 0; i--) {
 }
 
 var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'ZHIRRR--GANS';
-router.get('/china', async (req, res, next) => {
-  var apikeyInput = req.query.apikey;
-  if(!apikeyInput) return res.json(loghandler.notparam)
-  if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-    const china = JSON.parse(fs.readFileSync(__path +'/cecan/china.json'));
-    const China = china[Math.floor(Math.random() * china.length)];
-    let hasil = China.url;
-    data = await fetch(hasil).then(v => v.buffer())
-    await fs.writeFileSync(__path +'/tmp/gambar.jpg', data)
-    res.sendFile(__path +'/tmp/gambar.jpg')
-})
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -191,13 +180,13 @@ router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/thailand.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -209,13 +198,13 @@ router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/china.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -227,13 +216,13 @@ router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/indonesia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -245,13 +234,13 @@ router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/korea.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -263,13 +252,13 @@ router.get('/cewe/japan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/japan.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/japan.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -281,13 +270,13 @@ router.get('/cewe/malaysia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'undefined')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/malaysia.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/FreeRestAPIofc/Asupan/main/cecan/malaysia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -306,7 +295,7 @@ router.get('/asupan/cecan', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -325,7 +314,7 @@ router.get('/asupan/hijaber', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -345,7 +334,7 @@ router.get('/asupan', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -366,7 +355,7 @@ router.get('/asupan/rikagusriani', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -387,7 +376,7 @@ router.get('/asupan/santuy', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -408,7 +397,7 @@ router.get('/asupan/ukty', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -429,7 +418,7 @@ router.get('/asupan/bocil', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -450,7 +439,7 @@ router.get('/asupan/ghea', async (req, res, next) => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2556,7 +2545,7 @@ router.get('/news/cnn', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2579,7 +2568,7 @@ router.get('/news/cnbc', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2602,7 +2591,7 @@ router.get('/news/republika', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2625,7 +2614,7 @@ router.get('/news/tempo', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2648,7 +2637,7 @@ router.get('/news/antara', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2669,7 +2658,7 @@ router.get('/news/kumparan', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2692,7 +2681,7 @@ router.get('/filmapik/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2715,7 +2704,7 @@ router.get('/filmapik/kategori', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2738,7 +2727,7 @@ router.get('/filmapik/play', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2759,7 +2748,7 @@ router.get('/filmapik/terbaru', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2782,7 +2771,7 @@ router.get('/lk21/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2803,7 +2792,7 @@ router.get('/lk21/terbaru', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2824,7 +2813,7 @@ router.get('/lk21/comingsoon', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2845,7 +2834,7 @@ router.get('/lk21/tvseries', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2868,7 +2857,7 @@ router.get('/lk21/year', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2891,7 +2880,7 @@ router.get('/lk21/country', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -2914,7 +2903,7 @@ router.get('/lk21/genre', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3111,7 +3100,7 @@ router.get('/yutub/video', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3134,7 +3123,7 @@ router.get('/yutub/audio', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3157,7 +3146,7 @@ router.get('/ig/stalk', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3180,7 +3169,7 @@ router.get('/maker', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3203,7 +3192,7 @@ router.get('/maker2', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3224,7 +3213,7 @@ router.get('/github/stalk', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3245,7 +3234,7 @@ router.get('/repository/stalk', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3268,7 +3257,7 @@ router.get('/maker3', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3291,7 +3280,7 @@ router.get('/maker4', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3314,7 +3303,7 @@ router.get('/maker3d', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3337,7 +3326,7 @@ router.get('/maker3d/no2', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3360,7 +3349,7 @@ router.get('/maker3d/no3', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3383,7 +3372,7 @@ router.get('/maker3d/no4', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3406,7 +3395,7 @@ router.get('/yutub/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3429,7 +3418,7 @@ router.get('/maker/special/transformer', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
@@ -3452,7 +3441,7 @@ router.get('/maker/special/epep', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'Zeeone',
+             	author: 'FreeRestAPI',
                  result
              })
          })
